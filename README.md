@@ -1,4 +1,4 @@
-# Python -- 从新手到大师(安装markdown)
+# Python -- 从新手到大师100天(安装markdown，建议安装Pycharm)
 > 作者：Jam
 > 联系： 1248659692@qq.com
 
