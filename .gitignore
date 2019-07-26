@@ -1,0 +1,92 @@
+### Python .gitignore template(author Jam)
+# Distribution / static stuff / packaging
+*.log
+*.pyc
+*.json
+.idea
+.Python
+env/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+.idea/
+.ropeproject/
+*.egg-info/
+.installed.cfg
+*.egg
+config.py
+
+# Django stuff:
+mysite/static/images/stock/*.png
+mysite/static/wechat/*.mp3
+mysite/static/wechat/*.png
+mysite/static/wechat/*.mp4
+mysite/mysite/settings_local.py
+mysite/mysite/settings.py
+mysite/mysite/settings_product.py
+mysite/mysite/settings_celery.py
+mysite/mysite/settings_flower.py
+mysite/*.log
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# project temp files
+*.pyc
+*.log
+_build/
+temp/
+data/
+
+# pycharm temp files
+.idea/
+__pycache__/
+
+# mac temp files
+.DS_Store
+
+# wheel temp files
+build/
+*.egg-info/
+
+# Vim temp files
+*.swp
+*.swo
