@@ -396,10 +396,11 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 	4.操作像素
 	5.添加水印
 
-### 处理Excel电子表格
+### 处理Excel电子表格[官方文档](https://openpyxl.readthedocs.io/en/stable/#)。
 
 	Python的OpenPyXL模块让我们可以在Python程序中读取和修改Excel电子表格。
-	关于OpenPyXL的使用手册和使用文档可以查看它的[官方文档](https://openpyxl.readthedocs.io/en/stable/#)。
+	关于OpenPyXL的使用手册和使用文档可以查看它的文档
+	
 
 ### 处理Word文档
 
