@@ -1,4 +1,4 @@
-# Python -- 从新手到大师100天(开发环境Pycharm，markdown)
+## Python -- 从新手到大师100天(开发环境Pycharm，文本 markdown)
 > 作者：Jam
 > 联系： 1248659692@qq.com
 
