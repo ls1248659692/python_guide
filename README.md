@@ -501,28 +501,28 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 
 
-##Python爬虫相关思路：
+## Python爬虫相关思路：
 
-###爬取验证过程：
+### 爬取验证过程：
 	 1.use_agent  模拟浏览器,会用到fake模块,生成浏览器use_agent 列表
 	 2.IP proxy (常用代理免费代理,西刺,代理获取后还需要验证代理的有效性)
 	 3.cookies_pool,高并发,海量数据爬取,并应用redis 存储,当然也会出现cookie的失效与验证
 	 4.验证码的处理,常用有走相关扫码平台（云扫码后台人工处理或者图片验证码API）
 
-###验证码类型：
+### 验证码类型：
 		1.常见数字与字母组成,直接通过机器识别,正确率95% 图片灰度变成纯白,图片每个字符的切割识别
 		2.逻辑计算
 		3.词语识别
 		4.图片块的移动,selenium
 		4.图片识别与点击 12306
-###爬取页面分析过程：
+### 爬取页面分析过程：
 		1.网页静态页面  request+beautifulsoup,对于表格类的数据爬取直接采用pandas read_HTML直接获取数据的dataframe list
 		2.动态页面（ajax异步加载） selenium+Xpath（对于需要验证登入的适用）
 
-###爬取结果与数据清洗存储数据库
+### 爬取结果与数据清洗存储数据库
 
-###常用的爬虫框架：scrapy
-   ![](../static/markdown_pic/scrapy_strcture.png)
+### 常用的爬虫框架：scrapy
+   ![](./static/markdown_pic/scrapy_strcture.png)
 #### Scrapy主要包括了以下组件：
 
 	引擎(Scrapy): 用来处理整个系统的数据流处理, 触发事务(框架核心)
@@ -586,10 +586,10 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 ## MySQL 性能优化总结
 
 #### MySQL’s Logical Architecture
-   ![](../static/markdown_pic/Mysql_Architecture.png)
+   ![](./static/markdown_pic/Mysql_Architecture.png)
 
 #### MySQL’s Structure
-   ![](../static/markdown_pic/Mysql_Structure.png)
+   ![](./static/markdown_pic/Mysql_Structure.png)
 
 	[MYSQL性能优化]
 		数据量的大小决定了,需要采用的优化策略
@@ -715,7 +715,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 ## Python Web 开发总结
 
 ### web应用机制和术语
-   ![](../static/markdown_pic/web_application.png)
+   ![](./static/markdown_pic/web_application.png)
 
 ### web 开发：
 	Web开发的早期阶段，开发者需要手动编写每个页面，例如一个新闻门户网站，每天都要修改它的HTML页面，
@@ -727,7 +727,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 	甚至不用区分是PC端还是移动端。
 
 ### flask web应用
-   ![](../static/markdown_pic/Python_web.png)
+   ![](./static/markdown_pic/Python_web.png)
 
 ### web 应用机制和术语
 	| 术语          | 解释                                                         |
@@ -749,10 +749,10 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
   关于这个协议的详细信息以及目前的发展状况，阮一峰老师的[《HTTP 协议入门》](http://www.ruanyifeng.com/blog/2016/08/http.html)、[《互联网协议入门》](http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html)系列以及[《图解HTTPS协议》](http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html)进行了解
 
 #### HTTP请求（请求行+请求头+空行+[消息体]）：
-   ![](../static/markdown_pic/http-request.png)
+   ![](./static/markdown_pic/http-request.png)
 
 #### HTTP响应（响应行+响应头+空行+消息体）：
-   ![](../static/markdown_pic/http-response.png)
+   ![](./static/markdown_pic/http-response.png)
 
 ### Django概述
 
@@ -760,13 +760,13 @@ Python的Web框架有上百个，比它的关键字还要多。所谓Web框架�
 事实上，即便没有Web框架，我们仍然可以通过socket或[CGI](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3)来开发Web服务器端应用，但是这样做的成本和代价在实际开发中通常是不能接受的。通过Web框架，我们可以化繁为简，同时降低创建、更新、扩展应用程序的工作量。Python的Web框架中比较有名的有：Flask、Django、Tornado、Pyramid、Bottle、Web2py、web.py等。
 
 在基于Python的Web框架中，Django是所有重量级选手中最有代表性的一位，开发者可以基于Django快速的开发可靠的Web应用程序，因为它减少了Web开发中不必要的开销，对常用的设计和开发模式进行了封装，并对MVC架构提供了支持（MTV）。许多成功的网站和App都是基于Django框架构建的，国内比较有代表性的网站包括：知乎、豆瓣网、果壳网、搜狐闪电邮箱、101围棋网、海报时尚网、背书吧、堆糖、手机搜狐网、咕咚、爱福窝、果库等。
-   ![](../static/markdown_pic/Django-MTV.png)
+   ![](./static/markdown_pic/Django-MTV.png)
 
 Django诞生于2003年，它是一个在真正的应用中成长起来的项目，由劳伦斯出版集团旗下在线新闻网站的内容管理系统（CMS）研发团队编写（主要是Adrian Holovaty和Simon Willison），以比利时的吉普赛爵士吉他手Django Reinhardt来命名，在2005年夏天作为开源框架发布。使用Django能用很短的时间构建出功能完备的网站，因为它代替程序员完成了所有乏味和重复的劳动，剩下真正有意义的核心业务给程序员，这一点就是对DRY（Don't Repeat Yourself）理念的最好践行。
-   ![](../static/markdown_pic/mvc.png)
+   ![](./static/markdown_pic/mvc.png)
 
 ### django web 应用的工作流程
-   ![](../static/markdown_pic/Django-Flowchart.png)
+   ![](./static/markdown_pic/Django-Flowchart.png)
 
 	0.settings配置
 	1.jinjia2 HTML template模板引擎,模板引擎所涉及的模板语言编码
@@ -837,7 +837,7 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 	
 	   在浏览器中输入<http://127.0.0.1:8000>访问我们的服务器，效果如下图所示。
 	
-   ![](../static/markdown_pic/django-index-1.png)
+   ![](./static/markdown_pic/django-index-1.png)
 	
 	   说明1：刚刚启动的是Django自带的用于开发和测试的服务器，它是一个用纯Python编写的轻量级Web服务器，
 			 但它并不是真正意义上的生产级别的服务器，千万不要将这个服务器用于和生产环境相关的任何地方。
@@ -863,7 +863,7 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 	10. 回到manage.py所在的目录，刷新刚才的页面。
 	  (venv)$ cd ..
 	  (venv)$ python manage.py runserver
-   ![](../static/markdown_pic/django-index-2.png)
+   ![](./static/markdown_pic/django-index-2.png)
 
 #### django 页面创建
 	1. 创建名为hrs（人力资源系统）的应用（注：一个项目可以包含多个应用）。
@@ -1186,7 +1186,7 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 
    		执行完数据模型迁移操作之后，可以在通过图形化的MySQL客户端工具查看到E-R图（实体关系图）。
 
-   ![](../static/markdown_pic/er-graph.png)
+   ![](./static/markdown_pic/er-graph.png)
 
 #### django 在后台管理模型
 
@@ -1203,11 +1203,11 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 
 	   访问 http://127.0.0.1:8000/admin，会来到如下图所示的登录界面。
 	
-   ![](../static/markdown_pic/admin-login.png)
+   ![](./static/markdown_pic/admin-login.png)
 	
 	   登录后进入管理员操作平台
 	
-   ![](../static/markdown_pic/admin-welcome.png)
+   ![](./static/markdown_pic/admin-welcome.png)
 	
 	   至此我们还没有看到之前创建的模型类，需要在应用的admin.py文件中模型进行注册。
 
@@ -1223,7 +1223,7 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 
 	   注册模型类后，就可以在后台管理系统中看到
 
-   ![](../static/markdown_pic/admin-model.png)
+   ![](./static/markdown_pic/admin-model.png)
 
 	4. 对模型进行CRUD操作
 	
@@ -1231,15 +1231,15 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 	
 	   添加新的部门
 
-   ![](../static/markdown_pic/admin-model-create.png)
+   ![](./static/markdown_pic/admin-model-create.png)
 
    	   查看所有部门
 
-   ![](../static/markdown_pic/admin-model-read.png)
+   ![](./static/markdown_pic/admin-model-read.png)
 
    	   更新和删除部门。
 
-   ![](../static/markdown_pic/admin-model-delete-and-update.png)
+   ![](./static/markdown_pic/admin-model-delete-and-update.png)
 
 	5. 注册模型管理类。
 	
@@ -1264,9 +1264,9 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 	   admin.site.register(Emp, EmpAdmin)
 
 
-   ![](../static/markdown_pic/admin-model-depts.png)
+   ![](./static/markdown_pic/admin-model-depts.png)
 
-   ![](../static/markdown_pic/admin-model-emps.png)
+   ![](./static/markdown_pic/admin-model-emps.png)
 	
 	   为了更好的查看模型数据，可以为Dept和Emp两个模型类添加`__str__`魔法方法。
 
@@ -1292,7 +1292,7 @@ Django诞生于2003年，它是一个在真正的应用中成长起来的项目�
 	
 	   修改代码后刷新查看Emp模型的页面，效果如下图所示
 
-   ![](../static/markdown_pic/admin-model-emps-modified.png)
+   ![](./static/markdown_pic/admin-model-emps-modified.png)
 
 ### django 使用ORM完成模型的CRUD操作
 
