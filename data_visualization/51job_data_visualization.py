@@ -10,7 +10,7 @@ from collections import Counter
 import requests
 import matplotlib.pyplot as plt
 import jieba
-import MySQLdb
+import pymysql
 from gevent import monkey
 from gevent.pool import Pool
 from queue import Queue
@@ -238,7 +238,7 @@ class JobSpider:
 
     @staticmethod
     def insert_into_db():
-        conn = MySQLdb.connect(
+        conn = pymysql.connect(
             host="192.168.50.95",
             port=3306,
             user="admin",

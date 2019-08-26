@@ -134,7 +134,7 @@ def report_analysis():
     words_count_frequency = pd.value_counts(words_feature).to_dict()
     # plot_wordcloud(words_count_frequency)
 
-    print pd.value_counts(words_feature)[:100]
+    print (pd.value_counts(words_feature)[:100])
 
     # data['title_feature'] = data['title'].apply(lambda xx: word_segmentation(xx, 'chs'))
     # data['tags'] = data['title_feature'].apply(lambda xx: words_feature_weight(xx))

@@ -49,7 +49,7 @@ def scrape(language):
 
         return result
     else:
-        print GitHubData.ERROR_MSG.format(response.status_code)
+        print(GitHubData.ERROR_MSG.format(response.status_code))
 
 
 def send_mail(content_list):
@@ -64,7 +64,7 @@ def send_mail(content_list):
     table_content = ""
     for index, item in enumerate(content_list, 1):
         table_content += '''<tr><td>&nbsp;{}&nbsp;</td><td>{}</td><td>{}</td><td>{}</td></tr>'''.format(
-            index, str(item[0]), str(item[1]), item[2].encode('utf-8')
+            index, str(item[0]), str(item[1]), item[2]
         )
 
     mail_template = GitHubData.MAIL_TEMPLATE.format(
@@ -130,7 +130,7 @@ class GitHub():
     def show_timeline(self):
         for line in self.timeline:
             text = line['time'] + ' ' + line['thing']
-            print '*' + text + ' ' * (80 - len(text) - 2) + '*'
+            print('*' + text + ' ' * (80 - len(text) - 2) + '*')
 
     def overview(self, user=None):
         if user == None:
