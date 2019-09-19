@@ -18,10 +18,8 @@ from email.parser import Parser
 from urlparse import urlparse, parse_qs
 
 import html2text
-import pandas as pd
 from emoji import emojize
 
-from report_util.email_util import login_smtp_send_mail
 
 __author__ = 'Jam'
 __date__ = '2019/4/25 11:25'
@@ -861,16 +859,6 @@ def parse_query(url):
     return query_dict
 
 
-def parse_datetime(string):
-    import dateparser
-
-    if not string:
-        return None
-
-    print(dateparser.parse(str(string)))
-    return dateparser.parse(str(string))
-
-
 def bool_test():
     print(bool([]))
 
@@ -883,9 +871,13 @@ def tets_jieba():
             print text_seg.word,text_seg.flag
 
 def test_frozenset_dict():
-    f_set  = frozenset(('asaas',))
-    data = [1,]
-    print(dict(f_set,data))
+    f_set  = frozenset(['asaas','asas'])
+    print(f_set)
+    data = [1,2,3]
+    a=[1,2,3]
+    b=[2,4,6]
+    print(dict(zip(a,b)))
+    print(dict(zip(f_set,data)))
 
 
 if __name__ == "__main__":

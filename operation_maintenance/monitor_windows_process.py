@@ -10,11 +10,9 @@ from subprocess import check_output
 import psutil
 
 from report_log import report_log
-from constant import *
+from .constant import *
 from  report_util.data_analysis_head import *
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 CONFIG_FILE = os.path.join(PROJECT_ROOT, 'config/config.ini')
