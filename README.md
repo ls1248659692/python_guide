@@ -31,15 +31,15 @@
 - Either stand out or kicked out.
 - 
 ## Python 初学者的推荐阅读：
-- [《谈谈 Python 程序的运行原理》]((http://www.cnblogs.com/restran/p/4903056.html))
+- [《谈谈 Python 程序的运行原理》](http://www.cnblogs.com/restran/p/4903056.html)
 - [《Python整数对象实现原理》](https://foofish.net/python_int_implement.html)
 - [PythonTutor网站](http://www.pythontutor.com/)
 - [PEP 8链接](https://www.python.org/dev/peps/pep-0008/)
 
 ## Python语言基础
 ### 学习心态（**精读1本书胜于泛读10本**）
-1. 爬虫框架：  Scrapy(研究透一种)
-2. web开发框架： django(研究透一种)
+1. 爬虫框架：  Scrapy(研究透一种) , 可以深入了解 requests 源码实现
+2. web开发框架： django(研究透一种) 或者 Flask (研究透一种)
 3. Machine Learning框架：  TensorFlow(研究透一种)
 
 ## Python参考书籍
@@ -89,7 +89,7 @@
 4. 《Python数据可视化编程实战》（*Python Data Visualization Cookbook*）
 5. 《Python数据处理》（*Data Wrangling with Python*）
 
-### 机器学习
+### 机器学习(工作需要可以自行学习)
 
 1. 《Python机器学习基础教程》（*Introduction to Machine Learning with Python*）
 2. 《Python机器学习实践指南》（*Python Machine Learning Blueprints*）
@@ -100,15 +100,14 @@
 
 ## Python 代码编写格式与规范
 ## 代码编写过程中的需要注意事项：
-	0.PEP是Python Enhancement Proposal的缩写，通常翻译为“Python增强提案”
-	1.类总是使用驼峰格式命名,即所有单词首字母大写其余字母小写,类名应该简明,精确,并足以从中理解类所完成的工作
-	2.一行列数 : PEP 8 规定为 79 列,这有些苛刻了。根据自己的情况,比如不要超过满屏时编辑器的显示列数。这样就可以在不动水平游标的情况下,方便的查看代码。
-	3.一个函数 : 不要超过 30 行代码, 即可显示在一个屏幕类,可以不使用垂直游标即可看到整个函数。
-	4.一个类 : 不要超过 200 行代码,不要有超过 10 个方法。
-	5.一个模块 不要超过 500 行。
-	6.有时间多看看 PEP 8 和google Python代码规范
+	1.PEP是Python Enhancement Proposal的缩写，通常翻译为“Python增强提案”
+	2.类总是使用驼峰格式命名,即所有单词首字母大写其余字母小写,类名应该简明,精确,并足以从中理解类所完成的工作
+	3.一行列数 : PEP 8 规定为 79 列,这有些苛刻了。根据自己的情况,比如不要超过满屏时编辑器的显示列数。这样就可以在不动水平游标的情况下,方便的查看代码。
+	4.一个函数 : 不要超过 30 行代码, 即可显示在一个屏幕类,可以不使用垂直游标即可看到整个函数。
+	5.一个类 : 不要超过 200 行代码,不要有超过 10 个方法。
+	6.一个模块 不要超过 500 行。
+	7.有时间多看看 PEP 8 和google Python代码规范  [Python PEP 8](https://www.python.org/dev/peps/pep-0008/)
 
-####  [Python PEP 8](https://www.python.org/dev/peps/pep-0008/)
 #### Python 空格的使用
 
 		1. 使用空格来表示缩进而不要用制表符。这一点对习惯了其他编程语言的人来说简直觉得不可理喻，因为绝大多数的程序员都会用Tab来表示缩进，
@@ -203,7 +202,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 #### 嵌套的列表
 
-	names = ['关羽', '张飞', '赵云', '马超', '黄忠']
+    names = ['关羽', '张飞', '赵云', '马超', '黄忠']
     courses = ['语文', '数学', '英语']
     # 录入五个学生三门课程的成绩
     # 错误 - 参考http://pythontutor.com/visualize.html#mode=edit
@@ -215,7 +214,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
     print(scores)
 
 #### heapq、itertools等的用法
-	import heapq	
+    import heapq	
 
     list1 = [34, 25, 12, 99, 87, 63, 58, 78, 88, 92]
     list2 = [
@@ -232,7 +231,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
     print(heapq.nlargest(2, list2, key=lambda x: x['shares']))
 
 #### 排列 / 组合 / 笛卡尔积
-	import itertools
+    import itertools
 
     for val in itertools.permutations('ABCD'):
         print(val)
@@ -244,7 +243,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
         print(val)
 
 #### collections模块下的工具类(重要)
-	from collections import Counter
+    from collections import Counter
 
     words = [
         'look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes',
@@ -263,6 +262,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
             z = 100 - x - y
             if 5 * x + 3 * y + z // 3 == 100 and z % 3 == 0:
                 print(x, y, z)
+		
     # A、B、C、D、E五人在某天夜里合伙捕鱼 最后疲惫不堪各自睡觉
     # 第二天A第一个醒来 他将鱼分为5份 扔掉多余的1条 拿走自己的一份
     # B第二个醒来 也将鱼分为5份 扔掉多余的1条 拿走自己的一份
@@ -284,9 +284,8 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 	
 	#动态规划 - 适用于有重叠子问题和最优子结构性质的问题
 	#使用动态规划方法所耗时间往往远少于朴素解法(用空间换取时间)
-
 	def fib(num, temp={}):
-    """用递归计算Fibonacci数"""
+        """用递归计算Fibonacci数"""
 	    if num in (1, 2):
 	        return 1
 	    try:
@@ -370,21 +369,21 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 ### 函数的使用方式
 
-	将函数视为“一等公民”
-	高阶函数的用法（filter、map以及它们的替代品）
-	位置参数、可变参数、关键字参数、命名关键字参数
-	参数的元信息（代码可读性问题）
-	匿名函数和内联函数的用法（lambda函数）
-	闭包和作用域问题（LEGB）
-	装饰器函数（使用装饰器和取消装饰器）
-	输出函数执行时间的装饰器。
+	1.将函数视为“一等公民”
+	2.高阶函数的用法（filter、map以及它们的替代品）
+	3.位置参数、可变参数、关键字参数、命名关键字参数
+	4.参数的元信息（代码可读性问题）
+	5.匿名函数和内联函数的用法（lambda函数）
+	6.闭包和作用域问题（LEGB）
+	7.装饰器函数（使用装饰器和取消装饰器）
+	8.输出函数执行时间的装饰器。
 
 #### 计算机图像相关知识
-	1. 颜色。如果你有使用颜料画画的经历，那么一定知道混合红、黄、蓝三种颜料可以得到其他的颜色，
+	1. 颜色：如果你有使用颜料画画的经历，那么一定知道混合红、黄、蓝三种颜料可以得到其他的颜色，
 		事实上这三种颜色就是被我们称为美术三原色的东西，它们是不能再分解的基本颜色。在计算机中，我们可以将红、
 		绿、蓝三种色光以不同的比例叠加来组合成其他的颜色，因此这三种颜色就是色光三原色，
 		所以我们通常会将一个颜色表示为一个RGB值或RGBA值（其中的A表示Alpha通道，它决定了透过这个图像的像素，也就是透明度）。
-	2. 像素。对于一个由数字序列表示的图像来说，最小的单位就是图像上单一颜色的小方格，这些小方块都有一个明确的位置和被分配的色彩数值，
+	2. 像素：对于一个由数字序列表示的图像来说，最小的单位就是图像上单一颜色的小方格，这些小方块都有一个明确的位置和被分配的色彩数值，
 		而这些一小方格的颜色和位置决定了该图像最终呈现出来的样子，它们是不可分割的单位，我们通常称之为像素（pixel）。
 		每一个图像都包含了一定量的像素，这些像素决定图像在屏幕上所呈现的大小。
 
@@ -516,14 +515,14 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 		3.词语识别
 		4.图片块的移动,selenium
 		4.图片识别与点击 12306
+		
 ### 爬取页面分析过程：
 		1.网页静态页面  request+beautifulsoup,对于表格类的数据爬取直接采用pandas read_HTML直接获取数据的dataframe list
 		2.动态页面（ajax异步加载） selenium+Xpath（对于需要验证登入的适用）
 
 ### 爬取结果与数据清洗存储数据库
 
-### 常用的爬虫框架：scrapy
-   ![](./static/markdown_pic/scrapy_strcture.png)
+### 常用的爬虫框架：scrapy![](./static/markdown_pic/scrapy_strcture.png)
 #### Scrapy主要包括了以下组件：
 
 	引擎(Scrapy): 用来处理整个系统的数据流处理, 触发事务(框架核心)
@@ -586,11 +585,9 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 ## MySQL 性能优化总结
 
-#### MySQL’s Logical Architecture
-   ![](./static/markdown_pic/Mysql_Architecture.png)
+#### MySQL’s Logical Architecture![](./static/markdown_pic/Mysql_Architecture.png)
 
-#### MySQL’s Structure
-   ![](./static/markdown_pic/Mysql_Structure.png)
+#### MySQL’s Structure![](./static/markdown_pic/Mysql_Structure.png)
 
 	[MYSQL性能优化]
 		数据量的大小决定了,需要采用的优化策略
@@ -715,20 +712,18 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 ## Python Web 开发总结
 
-### web应用机制和术语
-   ![](./static/markdown_pic/web_application.png)
+### web应用机制和术语![](./static/markdown_pic/web_application.png)
 
 ### web 开发：
-	Web开发的早期阶段，开发者需要手动编写每个页面，例如一个新闻门户网站，每天都要修改它的HTML页面，
-	这样随着网站规模和体量的增大，这种方式就变得极度糟糕。为了解决这个问题，开发人员想到了用外部程序来为Web服务器生成动态内容，
-	也就是说HTML页面以及页面中的动态内容不再通过手动编写而是通过程序自动生成。最早的时候，这项技术被称为CGI（公共网关接口），
-	当然随着时间的推移，CGI暴露出的问题也越来越多，例如大量重复的样板代码，总体性能较为低下等，因此在时代呼唤新英雄的背景下，
-	PHP、ASP、JSP这类Web应用开发技术在上世纪90年代中后期如雨后春笋般涌现。通常我们说的Web应用是指通过浏览器来访问网络资源的应用程序，
-	因为浏览器的普及性以及易用性，Web应用使用起来方便简单，免除了安装和更新应用程序带来的麻烦，而且也不用关心用户到底用的是什么操作系统，
+	1.Web开发的早期阶段，开发者需要手动编写每个页面，例如一个新闻门户网站，每天都要修改它的HTML页面，
+	2.这样随着网站规模和体量的增大，这种方式就变得极度糟糕。为了解决这个问题，开发人员想到了用外部程序来为Web服务器生成动态内容，
+	3.也就是说HTML页面以及页面中的动态内容不再通过手动编写而是通过程序自动生成。最早的时候，这项技术被称为CGI（公共网关接口），
+	4.当然随着时间的推移，CGI暴露出的问题也越来越多，例如大量重复的样板代码，总体性能较为低下等，因此在时代呼唤新英雄的背景下，
+	5.PHP、ASP、JSP这类Web应用开发技术在上世纪90年代中后期如雨后春笋般涌现。通常我们说的Web应用是指通过浏览器来访问网络资源的应用程序，
+	6.因为浏览器的普及性以及易用性，Web应用使用起来方便简单，免除了安装和更新应用程序带来的麻烦，而且也不用关心用户到底用的是什么操作系统，
 	甚至不用区分是PC端还是移动端。
 
-### flask web应用
-   ![](./static/markdown_pic/Python_web.png)
+### flask web应用![](./static/markdown_pic/Python_web.png)
 
 ### web 应用机制和术语
 	| 术语          | 解释                                                         |
