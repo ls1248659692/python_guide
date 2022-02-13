@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>折线图案例</title>
+
+    <script type="text/javascript" src="../05chapter/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../05chapter/echarts/dark.js"></script>
+
+
+</head>
+<body>
+    <div id="chartmain" style="width:600px; height: 400px; margin:auto; ">
+
+    </div>
+    <script type="text/javascript">
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chartmain'),'dark');
+        //指定图标的配置和数据
+        var option = {
+            title:{
+                <!--标题-->
+                text:'ECharts 数据统计'
+            },
+            tooltip:{},
+            legend:{
+                data:['访问量']
+            },
+            xAxis:{
+                data:["Android","IOS","PC","Ohter"]
+            },
+            yAxis:{
+            },
+            series:[{
+                name:'访问量',
+                // 折线图类型type='line'
+                type:'bar',
+                data:[400,200,360,100]
+            }]
+
+            // name=legend.data的时候才能显示图例
+            // 饼图和折线图、柱状图有一点区别。主要是在参数和数据绑定上。饼图没有X轴和Y轴的坐标，数据绑定上也是采用value 和name对应的形式。
+            // series:[{
+            //     name:'访问量',
+            //     type:'pie',
+            //     radius:'60%',
+            //     data:[
+            //         {value:500,name:'Android'},
+            //         {value:200,name:'IOS'},
+            //         {value:360,name:'PC'},
+            //         {value:100,name:'Ohter'}
+            //     ]
+            // }]
+        };
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

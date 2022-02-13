@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- echarts -->
+    <script src="../05chapter/echarts/echarts.js"></script>
+    <!-- <script src="../05chapter/echarts/dataTool.js"></script> -->
+</head>
+<body>
+     <div id="main" style="width:600px;height:400px;margin:0 auto">
+    </div>
+
+    <!-- 业务指标仪表图，白宁超，2017年9月19日20:20:49 -->
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('main'));
+
+
+        option = {
+            tooltip : {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                feature: {
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [
+                {
+                    name: '业务指标',
+                    type: 'gauge',
+                    detail: {formatter:'{value}%'},
+                    data: [{value: 50, name: '完成率'}]
+                }
+            ]
+        };
+
+        setInterval(function () {
+            option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+            myChart.setOption(option, true);
+        },2000);
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
+

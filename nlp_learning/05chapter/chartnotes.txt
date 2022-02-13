@@ -1,0 +1,84 @@
+快速上手ECharts
+白宁超 2018年7月19日11:53:58
+
+1 echarts.js优点
+    echarts.js容易使用
+    echarts.js支持按需求打包
+    echarts.js开源
+    支持中国地图功能
+  echarts.js缺点
+    echarts.js的体积相对较大452k -- 2.76M
+    echarts.js的可定制性差
+
+2 常见的配置
+    title:{},标题
+    legend:{},图标
+    xAxis:{},x轴
+    yAxis{},y轴
+    tooltip:{},悬停提升
+    series:{},必不可少，指定图标类型（饼图、柱状图、折线图等）
+
+3 基本配置流程
+
+    （1）设置编码格式
+    <meta charset="UTF-8">
+    
+    （2）引用js文件：http://echarts.baidu.com/download.html
+    <script type="text/javascript" src='echarts.js'></script>
+    
+    （3）引用主题风格：http://echarts.baidu.com/download-theme.html
+                       http://echarts.baidu.com/theme-builder/
+    <script type="text/javascript" src="../../AllProject/EChartDomes/js/dark.js"></script>
+
+    （4）设置容器div
+    http://echarts.baidu.com/download.html
+
+    （5）具体图表选择：http://echarts.baidu.com/examples/
+                  http://gallery.echartsjs.com/explore.html#tags=echarts-gl~sort=rank~timeframe=all~author=all
+    <script type="text/javascript">
+    // 初始化图表标签
+    var myChart = echarts.init(document.getElementById('chart'));
+    var options={
+        //定义一个标题
+        title:{
+            text:'测试成绩'
+        },
+        legend:{
+            data:['销量']
+        },
+        //X轴设置
+        xAxis:{
+            data:['60分','70分','80分','90分','100分']
+        },
+        yAxis:{
+        },
+        //name=legend.data的时候才能显示图例
+        series:[{
+            name:'销量',
+            type:'bar',
+            data:['12','32','45','21','1']
+        }]
+
+    };
+    myChart.setOption(options);
+    </script>
+
+    （6）数据处理
+            表格数据处理：http://echarts.baidu.com/spreadsheet.html
+
+4 社区学习与实例选择
+    http://gallery.echartsjs.com/explore.html#sort=rank~timeframe=all~author=all
+  
+  扩展学习与案例选择：
+    http://echarts.baidu.com/download-extension.html
+
+5 使用教程
+    http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts
+
+6 API
+http://echarts.baidu.com/api.html#echarts
+
+7 常见问题
+    http://echarts.baidu.com/api.html
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>折线图案例</title>
+
+    <script type="text/javascript" src="../05chapter/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../05chapter/echarts/dark.js"></script>
+
+</head>
+<body>
+    <!-- 首先我们来假设一个命题，假设要统计一个商店一周的购买金额和一周的销售金额，其中的购买金额用柱状图表示，销售金额用折线图表示，然后还要标出一周中最大值和最小值，同时还要求出销售和购买的平均数，购买金额分别是[200,312,431,241,175,275,369]，销售金额[321,432,543,376,286,298,400] -->
+    <div id="chartmain" style="width:800px; height: 400px; margin:auto; ">
+
+    </div>
+    <script type="text/javascript">
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chartmain'),'dark');
+
+        //指定图标的配置和数据
+        var option = {
+            baseOption:{
+                title:{
+                text:'模拟商店一周销售情况',
+                subtext:'虚拟数据'
+            },
+            tooltip:{
+                show:true,
+                formatter:'系列名:{a}<br />类目:{b}<br />数值:{c}'
+            },
+            legend:{
+                data:['购买金额','销售金额']
+            },
+            xAxis:{
+                data:["周一","周二","周三","周四","周五","周六","周日"]
+            },
+            yAxis:{
+            },
+            series:[{
+                name:'购买金额',
+                type:'bar',
+                data:[200,312,431,241,175,275,369],
+                markPoint: {
+                    data: [
+                        {type: 'max', name: '最大值'},
+                        {type: 'min', name: '最小值'}
+                    ]
+                },
+                markLine:{
+                    data:[
+                        {type:'average',name:'平均值',itemStyle:{
+                            normal:{
+                                color:'green'
+                            }
+                        }}
+                        ]
+                    }
+                },{
+                    name:'销售金额',
+                    type:'line',
+                    data:[321,432,543,376,286,298,400],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine:{
+                        data:[
+                            {type:'average',name:'平均值',itemStyle:{
+                                normal:{
+                                    color:'blue'
+                                }
+                            }}
+                            ]
+                        }
+                    }]
+                },
+                media:[
+                    {
+                        //小与1000像素时候响应
+                        query:{
+                            maxWidth:1000
+                        },
+                        option:{
+                            title:{
+                                show:true,
+                                text:'测试一下'
+                            }
+                        }
+                    }
+                ]
+            };
+        //为了使echart图表随着浏览器的大小发生响应式变化
+        window.onresize = myChart.resize;
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
