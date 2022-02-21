@@ -1531,7 +1531,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 	... ) # 查询名字以“张”开头且工资大于等于5000或补贴大于等于1000的员工
 	<QuerySet [<Emp: 张三丰>]>
 
-###Deploy flask app with nginx using gunicorn and supervisor：
+### Deploy flask app with nginx using gunicorn and supervisor：
 	Flask: Server backend(web app)
 	Nginx: Reverse proxy(static service)
 	Gunicorn: Deploy flask app (WSGI Web Server Gateway Interface, 服务器和Python web app 接口)
@@ -1539,7 +1539,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 
 ## Python 常用模块包总结
 
-###supervisor example
+### supervisor example
 	[command] 
 	supervisorctl restart py_efin_web
 	supervisorctl reload py_efin_web
