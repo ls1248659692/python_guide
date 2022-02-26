@@ -1,4 +1,4 @@
-## Python 后端web开发 -- 系统化学习(开发环境Pycharm，文本 markdown)
+## Python 后端web开发 -- 系统化学习与书籍推荐
 > 作者：Jam
 > 联系： 1248659692@qq.com
 
@@ -1689,5 +1689,88 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
     LDA是一种非监督机器学习技术，可以用来识别大规模文档集或语料库中潜藏的主题信息。它采用了词袋的方法，这种方法将每一篇文档视为一个词频向量，从而将文本信息转化为了易于建模的数字信息。
     但是词袋方法没有考虑词与词之间的顺序，这简化了问题的复杂性，同时也为模型的改进提供了契机。每一篇文档代表了一些主题所构成的一个概率分布，而每一个主题又代表了很多单词所构成的一个概率分布。
       
+## CS四大基础课相关书籍推荐
+
+### 操作系统
+
+- 自己动手写操作系统.PDF [百度云下载链接](https://pan.baidu.com/s/1V6jlKFJYMhhXx95zL_kDdQ)  密码:8t24
+- 现代操作系统（第三版）中文版>.PDF  [百度云下载链接](https://pan.baidu.com/s/1pCqiD0J-zX9CZYieG8WS6g)  密码:b69r
+- 现代操作系统.PDF  [百度云下载链接](https://pan.baidu.com/s/1hu-HYJFAOsIee6SAqDm_Zw)  密码:gw9d
+- 鸟哥私房菜（全）.PDF [百度云下载链接](https://pan.baidu.com/s/1sfdfsUqtsqkAxxW3uc4RTw)  密码:766o
+- 鸟哥的Linux私房菜基础篇第三版.PDF  [百度云下载链接](https://pan.baidu.com/s/18JMSLS3_zUH74c6a-wx1Mg)  密码:esqm
+- 计算机的心智操作系统之哲学原理.PDF  [百度云下载链接](https://pan.baidu.com/s/16dqEWOtDb6ZDn_-GntsvhQ)  密码:n4lk
+- 操作系统真象还原.PDF  [百度云下载链接](https://pan.baidu.com/s/1Z655N--CmVz2EeQIKVIpNg)  密码:8whd
+- 操作系统设计与实现.PDF  [百度云下载链接](https://pan.baidu.com/s/1Sb3i0MnKyfD_1bEL9i1SrQ)  密码:ofdu
+- 《Linux内核完全剖析基于0.12内核》.PDF (带目录可注释)  [百度云下载链接](https://pan.baidu.com/s/1rT2fgdmI48VxAmDPTFVurw)  密码:door
+- x86汇编语言-从实模式到保护模式.PDF  [百度云下载链接](https://pan.baidu.com/s/1iYZ0p_pYg1W2yIeGdhA8og)  密码:l1k6
+- UNIX网络编程第二卷.PDF  [百度云下载链接](https://pan.baidu.com/s/1YVK98krSZWAOKfpf4I7rkw)  密码:orlv
+- UNIX初级教程(完整书签版).PDF  [百度云下载链接](https://pan.baidu.com/s/1LFTG4eUf-wA7LMujChImvg)  密码:6oc7
+- UNIX编程艺术-中文版【The+Art+of+UNIX+Programming】.PDF  [百度云下载链接](https://pan.baidu.com/s/1wLBDUMXlZySYfJr_ahl4jg)  密码:83ck
+- Orange's一个操作系统的实现.PDF  [百度云下载链接](https://pan.baidu.com/s/1G5il2flKYsZl70KS5NoXUw)  密码:l6n3
+- LInux情景分析(上).PDF  [百度云下载链接](https://pan.baidu.com/s/1YSdc-5_yOW7BgvX5B4CyOQ)  密码:0d0w
+- LINUX内核源代码情景分析(下).PDF  [百度云下载链接](https://pan.baidu.com/s/1je_f0RELMbmZ7FKO-YIwqw)  密码:v9q2
+- LINUX内核源代码情景分析(上).PDF  [百度云下载链接](https://pan.baidu.com/s/1Af53-XSLK1PRwqjOYZrQFA)  密码:kgit
+- Linux内核完全注释.PDF  [百度云下载链接](https://pan.baidu.com/s/1SkoByf-ZqGvc822ySYLaDA)  密码:aqso
+- Linux内核设计与实现(第三版中文高清带目录).PDF  [百度云下载链接](https://pan.baidu.com/s/1auYg1laPh3gs8IVx9K6uFQ)  密码:n6de
+- book-rev10.PDF  [百度云下载链接](https://pan.baidu.com/s/1BKwrxSxosWwiZZP1O1glWA)  密码:qk1i
+
+
+### 计算机网络
+
+- 计算机网络自顶向下:[百度网盘链接](https://pan.baidu.com/s/1PidIzLmFVWAb8T74GyVGlQ)  密码: bhob
+- 计算机网络教程：自顶向下方法.pdf    [百度云下载链接](https://pan.baidu.com/s/12Pbm4s0jFExKdBiso4Mt8Q)  密码:gkpg
+- Wireshark网络分析就这么简单.pdf   [百度云下载链接](https://pan.baidu.com/s/1F3a4yPoKzvTnmkDNB3YiSQ)  密码:1aek
+- tcp源码分析.pdf   [百度云下载链接](https://pan.baidu.com/s/1wqtLLNudruzDSoMwoan5zA)  密码:jwk8
+- HTTP权威指南（中文版）.pdf   [百度云下载链接](https://pan.baidu.com/s/1FPYpNKrlH7cXJUCmmasR-A)  密码:2n0j
+
+
+### 计算机系统
+
+- 深入理解计算机系统（中文清晰）.pdf    [百度云下载链接](https://pan.baidu.com/s/11oR4ZnOfuD7uA1koCr0XQg)  密码:srbi
+- 链接器和加载器.pdf  [百度云下载链接](https://pan.baidu.com/s/14_W9GhUnTEnkzkkS55kYtg)  密码:jjj1
+- 分布式系统概念与设计 原书第5版.pdf   [百度云下载链接](https://pan.baidu.com/s/1ULEs5pkUnlOa6glwhYXBxw)  密码:d7ip
+- 程序员的自我修养—链接、装载与库--书签目录.pdf   [百度云下载链接](https://pan.baidu.com/s/1y3KCxsmVt0waey-kvs-QoQ)  密码:5ilw
+- 编码——隐匿在计算机软硬件背后的语言上.pdf   [百度云下载链接](https://pan.baidu.com/s/1X0vCd-Z9mS51NCKzgr0_iA)  密码:0fg8
+
+
+## 算法和数据结构
+
+- 算法图解.pdf  [百度云下载链接](https://pan.baidu.com/s/1dhEy_uvJYoqehdvYnHzoBg)  密码:lk0v
+- 算法第四版.pdf  [百度云下载链接](https://pan.baidu.com/s/1b89HDicDLsCC_qg894FUvA)  密码:gsjc
+- 算法导论第三版.pdf  [百度云下载链接](https://pan.baidu.com/s/1ljP9Qwg5RqL_4LzrYK9jrA)  密码:qans
+- 数据结构与算法经典问题解析Java语言描述.pdf  [百度云下载链接](https://pan.baidu.com/s/1cXLrpad3Z-huk5otPVMMjg)  密码:m7ef
+- 数据结构与算法分析:C语言描述_原书第2版.pdf  [百度云下载链接](https://pan.baidu.com/s/1MudCT3RNO9I991surooqgg)  密码:1w5g
+- 大话数据结构.pdf  [百度云下载链接](https://pan.baidu.com/s/1dyH64h2603-ag8Yk6UM94w)  密码:h5du
+- 编程之美——微软技术面试心得.pdf  [百度云下载链接](https://pan.baidu.com/s/1r1VkAgh03G5Zfha35coyrg)  密码:rcpv
+- 编程之法.pdf  [百度云下载链接](https://pan.baidu.com/s/1jbypY-mQxJ1M1Hz97ptFjQ)  密码:0cv3
+
+- 背包九讲.pdf  [百度云下载链接](https://pan.baidu.com/s/13-ov__8xJ_SSxCmhkP4iSQ)  密码:he90
+- 啊哈算法.pdf  [百度云下载链接](https://pan.baidu.com/s/1vO9c3T3v89krlMsWEGDQCw)  密码:h89a
+- Algorithms, 4th Edition(算法，第四版).pdf  [百度云下载链接](https://pan.baidu.com/s/1ugDCe6ISRoa1Zi3UGW5Ncw)  密码:ipni
+
+## 网络编程
+
+- 深入理解Nginx模块开发与架构解析第2版.pdf    [百度云下载链接](https://pan.baidu.com/s/15qUX_EdmFEysCRZ6jb_FBw)  密码:ruuc
+- NAT概述.pdf    [百度云下载链接](https://pan.baidu.com/s/1WCzSto3gccspF9Cnvz8FmA)  密码:5skb
+
+
+- Linux网络编程.pdf   [百度云下载链接](https://pan.baidu.com/s/16VlCbRzSUyiBfL7dVNqYqg)  密码:h42n
+- Linux高性能服务器编程.pdf    [百度云下载链接](https://pan.baidu.com/s/1Bf0CaJ5m3hNfJF7oNvYn6g)  密码:o054
+- Linux多线程服务端编程.pdf    [百度云下载链接](https://pan.baidu.com/s/1GNNQIOBAPpMv9OiAn9Taaw)  密码:g2vr
+ 
+
+## 架构和设计模式
+
+- 设计模式pdf    [百度云下载链接](https://pan.baidu.com/s/1TMet-9ceUT-_1LfKac9Bgw)  密码:6af9
+- 软件架构方面.pdf [百度云下载链接](https://pan.baidu.com/s/1zGuxNXFMFnz1ul0In0hTGA)  密码:dnvl
+- 大型网站技术架构_核心原理与案例分析_李智慧.pdf  [百度云下载链接](https://pan.baidu.com/s/1Sq6oz5olXppL-szyBUbpGA)  密码:7f0m
+- 程序员的自我修养—链接、装载与库--书签目录.pdf   [百度云下载链接](https://pan.baidu.com/s/1y3KCxsmVt0waey-kvs-QoQ)  密码:5ilw
+- 大型分布式网站架构设计与实践.带目录书签.完整版.pdf   [百度云下载链接](https://pan.baidu.com/s/1uSDX_IW5YzcPobn00q1ZVQ)  密码:mcdd
+
+## 数据库和存储
+
+- 高性能 MySQL 第三版.pdf [百度云下载链接](https://pan.baidu.com/s/15ErTDBdZETdcbyncJeHIMQ)  密码:244p
+- Redis开发与运维(付磊).pdf [百度云下载链接](https://pan.baidu.com/s/1z6ojYkZU88Tznk4HX6RuxQ)  密码:gsp6
+- MySQL 技术内幕 InnoDB 存储引擎 第 2 版.pdf[百度云下载链接](https://pan.baidu.com/s/1YPZsJxaqTPNYtNgz3m893Q)  密码:e4m4
 
 
