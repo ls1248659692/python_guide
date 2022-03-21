@@ -771,7 +771,7 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 	5.form和modelform的使用
 	6.django 常用的内置函数
 
-### django web 应用的快速上手
+### [django web 前后端开发应用的快速上手](https://github.com/ls1248659692/python_guide/blob/master/django_learning/README.md)
 
 #### Python 环境准备工作
 
