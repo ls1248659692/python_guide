@@ -1,0 +1,37 @@
+mtianyan_mysql:
+    image: mysql:8.0
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password --mysqlx=0
+    environment:
+      - MYSQL_PORT=3306  # cannot change this port to other number
+      - MYSQL_DATABASE=online_mooc # name you want for the database
+      - MYSQL_USER=root # change to whatever username you wantr
+      - MYSQL_ROOT_PASSWORD=mtianyanroot #change to good root password
+    volumes:
+      - "./db:/var/lib/mysql"
+      - "./sql:/sql"
+
+
+mtianyan_nginx:
+  restart: always
+  image: nginx
+  ports:
+    - "8002:80"
+  volumes:
+    - ./conf/nginx.conf:/etc/nginx/conf.d/nginx.conf
+  volumes_from:
+    - mtianyan_mxonline3
+  links:
+    - mtianyan_mxonline3:web
+
+mtianyan_mxonline3:
+  restart: always
+  build: .
+  environment:
+    - use_docker=1
+  volumes:
+    - .:/ProjectPath
+    - ./conf/uwsgi.ini:/etc/uwsgi.ini
+  links:
+    - mtianyan_mysql:mysql
+  command: uwsgi -i /etc/uwsgi.ini
