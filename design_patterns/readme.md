@@ -6,7 +6,7 @@ Python Design Patterns
 
 断断续续读了好久设计模式，记录此篇总结。设计模式最初发源于C++/Java等静态语言，Python语言本身的很多特性已经覆盖了设计模式，甚至用了都不知道，比如：decorator/metaclass/generator/getattr等。但是写稍微大型的项目时，还是经常力不从心。就如上面引用的那句话，通过设计模式可以学习前人的智慧，写出更好的代码。
 
-所有代码都在[https://github.com/Meteorix/python-design-patterns](https://github.com/Meteorix/python-design-patterns)，python3环境下可以跑通，请跑起来玩玩。代码仅限演示作用，更注重清晰地用python语法展示patterns，而不是完备性，请勿用在生产环境。欢迎提issue和pr : )
+python3环境下可以跑通，请跑起来玩玩。代码仅限演示作用，更注重清晰地用python语法展示patterns，而不是完备性，请勿用在生产环境。欢迎提issue和pr : )
 
 ## 设计模式六大原则
 
